@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicycle Accessories</title>
+    <link rel="shortcut Icon" type="Image/jpg" href="logo.png">
+    <link rel="stylesheet" href="accessories.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .shortcut-menu {
+            margin-bottom: 20px;
+            padding: 10px;
+            background-color: #000000;
+            border-radius: 5px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            
+        }
+        .shortcut-menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: bold;
+        }
+        .shortcut-menu a:hover {
+            color: #000000;
+        }
+        .content {
+            margin-top: 60px;
+        }
+        .accessory-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .accessory-item {
+            display: flex;
+            flex-direction: column;
+            width: calc(33.333% - 20px);
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+        .accessory-item img {
+            max-width: 100%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .accessory-details {
+            flex: 1;
+        }
+        .accessory-details h2 {
+            margin: 0 0 10px;
+            color: #555;
+        }
+        .accessory-details p {
+            margin: 5px 0;
+            color: #666;
+        }
+        .price {
+            font-size: 1.2em;
+            color: #e63946;
+            font-weight: bold;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #d4af37;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: #000000;
+        }
+
+        .shortcut-menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #d4af37;
+    font-weight: bold;
+    padding: 5px 10px; /* Add padding for better clickability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    border-radius: 3px; /* Rounded corners for a polished look */
+}
+
+.shortcut-menu a:hover {
+    color: #000000; /* Change text color on hover */
+    background-color: #f0e68c; /* Add a light background color on hover */
+    text-decoration: underline; /* Optional: underline text on hover */
+}
+    </style>
+</head>
+<body>
+    <div class="shortcut-menu">
+        <a href="polygon.html">Home</a>
+        <a href="#helmets">Helmets</a>
+        <a href="#shoes">Shoes</a>
+        <a href="#sunglasses">Sunglasses</a>
+        <a href="#bottles">Bottles</a>
+        <a href="#gloves">Gloves</a>
+        <a href="#tights">Tights & Trousers</a>
+        <a href="#jackets">Jackets & Vests</a>
+    </div>
+
+    <div class="container content">
+        <h1 id="helmets">Bicycle Helmets</h1>
+        <div class="accessory-grid">
+
+            <!-- Accessory 1 -->
+            <div class="accessory-item">
+                <img src="kask.jpg" alt="Bicycle Accessory 1">
+                <div class="accessory-details">
+                    <h2>Kask Nirvana Aero Helmet</h2>
+                    <p>An aerodynamic helmet designed for road cycling, offering a balance between performance and comfort. It features advanced ventilation and a lightweight design to enhance speed and reduce fatigue.</p>
+                    <p class="price">RM1,200.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Accessory 2 -->
+            <div class="accessory-item">
+                <img src="trek balista.jpg" alt="Bicycle Accessory 2">
+                <div class="accessory-details">
+                    <h2>Trek Ballista Mips Road Helmet</h2>
+                    <p>Trek's fastest, most aerodynamic helmet, engineered to save watts and shave seconds. It features excellent ventilation, a lightweight design, and a fully integrated Mips Air safety system for enhanced protection.</p>
+                    <p class="price">RM 1,350.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Accessory 3 -->
+            <div class="accessory-item">
+                <img src="trek mips.jpg" alt="Bicycle Accessory 3">
+                <div class="accessory-details">
+                    <h2>Trek Ballista Mips Asia Fit Road Bike Helmet</h2>
+                    <p>Similar to the standard Ballista Mips, this version is tailored for an Asian fit, providing the same aerodynamic advantages, ventilation, and Mips Air safety system.</p>
+                    <p class="price">RM 1,350.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Accessory 4 -->
+            <div class="accessory-item">
+                <img src="trek3.jpg" alt="Bicycle Accessory 4">
+                <div class="accessory-details">
+                    <h2>Trek Rally WaveCel Mountain Bike Helmet</h2>
+                    <p>A mountain bike helmet featuring WaveCel technology, which is designed to absorb energy in multiple types of bicycle accidents. It offers extended coverage and a BOA fit system for superior comfort and security.</p>
+                    <p class="price">RM 800.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Accessory 5 -->
+            <div class="accessory-item">
+                <img src="askar.jpg" alt="Bicycle Accessory 5">
+                <div class="accessory-details">
+                    <h2>Sanction 2 DLX Mips</h2>
+                    <p>A full-face helmet designed for BMX and downhill riders, featuring Mips technology for added brain protection. It offers a lightweight fiberglass shell and adjustable visor.</p>
+                    <p class="price">RM 700.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Accessory 6 -->
+            <div class="accessory-item">
+                <img src="askar2.jpg" alt="Bicycle Accessory 6">
+                <div class="accessory-details">
+                    <h2>Super Air R Spherical</h2>
+                    <p>A versatile helmet with a removable chin bar, suitable for trail and enduro riding. It features Spherical Technology powered by Mips for comprehensive energy management and superior ventilation.</p>
+                    <p class="price">RM 1,500.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Accessory 7 -->
+            <div class="accessory-item">
+                <img src="hel.jpg" alt="Bicycle Accessory 7">
+                <div class="accessory-details">
+                    <h2>Trek Velocis Mips Asia Fit Helmet</h2>
+                    <p>A high-performance road helmet designed for comfort and speed, featuring Mips technology and tailored for an Asian fit. It offers superior ventilation and a BOA fit system for a secure and personalized fit. </p>
+                    <p class="price">RM 1,300.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Accessory 8 -->
+            <div class="accessory-item">
+                <img src="h.jpg" alt="Bicycle Accessory 8">
+                <div class="accessory-details">
+                    <h2>LOCAL</h2>
+                    <p>A skate-inspired helmet suitable for urban cycling and skateboarding. It combines a modern shape with dual certification and an adjustable fit system for comfort and safety.</p>
+                    <p class="price">RM 250.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+            <!-- Accessory 9 -->
+            <div class="accessory-item">
+                <img src="he.jpg" alt="Bicycle Accessory 9">
+                <div class="accessory-details">
+                    <h2>SPAN</h2>
+                    <p>A youth helmet with a street-inspired design, offering a secure fit and multiple color options. It features an adjustable fit system and ample ventilation for comfort.</p>
+                    <p class="price">RM 200.00</p>
+                    <a href="#" class="button">Buy Now</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <h1 id="shoes">Bicycle Shoes</h1>
+<div class="accessory-grid">
+    <div class="accessory-item">
+        <img src="trek kst.jpg" alt="Bicycle Accessory 1">
+        <div class="accessory-details">
+            <h2>Trek Foray Mountain Bike Shoe</h2>
+            <p>A versatile off-road cycling shoe designed for comfort and performance. Features a durable upper with GnarGuard protection and a BOA® L6 dial for precise fit adjustments. Ideal for mountain biking adventures.</p>
+            <p class="price">RM 589.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="accessory-item">
+        <img src="trek kst2.jpg" alt="Bicycle Accessory 2">
+        <div class="accessory-details">
+            <h2>Trek RSL Knit Road Cycling Shoes</h2>
+            <p>An all-out race shoe that combines a lightweight knit upper with a stiff carbon sole for maximum power transfer. Designed for competitive road cyclists seeking top-tier performance and comfort.</p>
+            <p class="price">RM 2,199.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="accessory-item">
+        <img src="trek kst3.jpg" alt="Bicycle Accessory 3">
+        <div class="accessory-details">
+            <h2>Bontrager SSR Women's Multisport Bike Shoese</h2>
+            <p>A versatile shoe suitable for on-road, off-road, touring, or commuting. Features a roomier fit, classic lace closure system, and a lugged, full-rubber outsole for excellent traction during off-bike activities.</p>
+            <p class="price">RM 379.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+  
+
+<h1 id="sunglasses">Bicycle Sunglasses</h1>
+
+<div class="accessory-grid">
+    <div class="accessory-item">
+        <img src="s.jpg" alt="Bicycle Accessory 1">
+        <div class="accessory-details">
+            <h2>Oakley Sphaera</h2>
+            <p>DESIGNED FOR MULTI-SPORT USAGE: Modern, sleek design with an extended field of view and optimized retention and comfort.</p>
+            <p class="price">RM1,089.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="accessory-item">
+        <img src="ss.jpg" alt="Bicycle Accessory 2">
+        <div class="accessory-details">
+            <h2>Oakley Kato Cycling Eyewear</h2>
+            <p>DISRUPTIVE DESIGN – Oakley Kato has a progressive, disruptive design intended to fit the lens as close to the face as possible, providing optimized coverage, wider field of view, frame retention and impact protection.</p>
+            <p class="price">RM1,559.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="accessory-item">
+        <img src="sss.jpg" alt="Bicycle Accessory 3">
+        <div class="accessory-details">
+            <h2>Oakley Frogskin Hybrid</h2>
+            <p>UPDATING A CLASSIC – The Frogskins style gets updated with color breaks Unobtainium® components, and a trigger stem design.</p>
+            <p class="price">RM829.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+
+<h1 id="bottles">Bicycle Bottles</h1>
+<div class="accessory-grid">
+    <div class="accessory-item">
+        <img src="botol1.jpg" alt="Bicycle Accessory 1">
+        <div class="accessory-details">
+            <h2>Elite Fly 950ml Bottle</h2>
+            <p>The lightest sport bottle available worldwide used by the best World Tour pro teams.</p>
+            <p class="price">RM49.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+    
+    <div class="accessory-item">
+        <img src="trek botol.jpg" alt="Bicycle Accessory 2">
+        <div class="accessory-details">
+            <h2>Trek Voda Cycling Bottle</h2>
+            <p>Redesigned bottle and cap feature all-new materials for great feel and consistent closure.</p>
+            <p class="price">RM49.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="accessory-item">
+        <img src="botol2.jpg" alt="Bicycle Accessory 3">
+        <div class="accessory-details">
+            <h2>Oakley Frogskin Hybrid</h2>
+            <p>The Elite Fly Tex is WorldTour’s most used water bottle because it’s incredibly lightweight.</p>
+            <p class="price">RM42.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+<h1 id="gloves">Bicycle Gloves</h1>
+<div class="accessory-grid">
+    <div class="accessory-item">
+        <img src="gl1.jpg" alt="Bicycle Accessory 1">
+        <div class="accessory-details">
+            <h2>Bontrager Kids' Bike Glove</h2>
+            <p>A bike glove specially designed to support and protect little hands while offering fun graphics.</p>
+            <p class="price">RM69.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+    
+    <div class="accessory-item">
+        <img src="gl2.jpg" alt="Bicycle Accessory 2">
+        <div class="accessory-details">
+            <h2>Bontrager JFW Winter Cycling Gloves</h2>
+            <p>Insulated, protective gloves that won’t constrict or hinder mobility when Jack Frost appears.</p>
+            <p class="price">RM299.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="accessory-item">
+        <img src="gl3.jpg" alt="Bicycle Accessory 3">
+        <div class="accessory-details">
+            <h2>Bontrager Velocis Dual Foam Gloves</h2>
+            <p>Gel and memory foam pads provide superior comfort and vibration control.</p>
+            <p class="price">RM169.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+<h1 id="tights">Bicycle Tights & Trousers</h1>
+<div class="accessory-grid">
+    <div class="accessory-item">
+        <img src="baju1.jpg" alt="Bicycle Accessory 1">
+        <div class="accessory-details">
+            <h2>Trek Circuit Softshell Cycling Bib Tights</h2>
+            <p>Padded bib tights with wind-and-water protection that let you ride year-round.</p>
+            <p class="price">RM800.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+    
+    <div class="accessory-item">
+        <img src="baju2.jpg" alt="Bicycle Accessory 2">
+        <div class="accessory-details">
+            <h2>Castelli Espresso Bibshort Woman</h2>
+            <p>Castelli engineered Espresso Doppio fabric for comfort and a perfect fit.</p>
+            <p class="price">RM719.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="accessory-item">
+        <img src="baju3.jpg" alt="Bicycle Accessory 3">
+        <div class="accessory-details">
+            <h2>Castelli Competizione Cycling Bib Short</h2>
+            <p>UAffinity Pro Lycra® fabric on inside of leg for outstanding stretch and rebound.</p>
+            <p class="price">RM429.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+<h1 id="jackets">Bicycle Jackets & Vests</h1>
+<div class="accessory-grid">
+    <div class="accessory-item">
+        <img src="jacket.jpg" alt="Bicycle Accessory 1">
+        <div class="accessory-details">
+            <h2>Men's Prime Wind Vest</h2>
+            <p>The perfect apparel for the perfect ride, that's what our Prime Series is all about.</p>
+            <p class="price">RM645.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+    
+    <div class="accessory-item">
+        <img src="jacket2.jpg" alt="Bicycle Accessory 2">
+        <div class="accessory-details">
+            <h2>Men's HyprViz SL Pro Wind Gilet</h2>
+            <p>A gilet is arguably the most versatile piece of cycling clothing – perfect for cool mornings, fast descents, and varying temperatures – and the SL Pro Wind Gilet is no exception.</p>
+            <p class="price">RM538.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+
+    <div class="accessory-item">
+        <img src="WhatsApp Image 2025-01-13 at 04.56.23_70d7c434.jpg" alt="Bicycle Accessory 3">
+        <div class="accessory-details">
+            <h2>Men's Trail Wind Jacket</h2>
+            <p>UPDATING A CLASSIC – The Frogskins style gets updated with color breaks Unobtainium® components, and a trigger stem design.</p>
+            <p class="price">RM559.00</p>
+            <a href="#" class="button">Buy Now</a>
+        </div>
+    </div>
+</div>
+
+
